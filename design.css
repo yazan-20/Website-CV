@@ -1,0 +1,468 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --primary-color: #edf2fc;
+    --secondary-color: #212121;
+}
+.dark-theme{
+    --primary-color: #000106;
+    --secondary-color: #fff;
+}
+#icon{
+    width: 30px;
+    cursor: pointer;
+}
+nav ul{
+    flex: 1;
+    text-align: right;
+}
+
+.hero{
+    height: 100vh;
+    width: 100%;
+    background: var(--primary-color);
+    font-family: sans-serif;
+    position: relative;
+    
+}
+nav{
+    width: 85%;
+    margin: auto;
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    width: 80px;
+    display: block;
+    position: absolute;
+    top: 2%;
+    left: 5%;
+}
+nav ul li{
+    display:  inline-block;
+    list-style: none;
+    margin: 10px 20px; 
+}
+nav ul li a{
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+nav ul li a:hover{
+    color: #b32f2f;
+}
+.info{
+    margin-left: 10%;
+    margin-top: 8%;
+}
+.info h1{
+    font-size: 200%;
+    color: var(--secondary-color);
+    margin-bottom: 20px;
+}
+span{
+    color: #44bd44b0;
+}
+.info p{
+    color: var(--secondary-color);
+    line-height: 22px;
+}
+.info a{
+    background: var(--secondary-color);
+    padding: 10px 18px;
+    text-decoration: none;
+    color: var(--primary-color);
+    display: inline-block;
+    margin: 30px 0;
+    border-radius: 5px;
+}
+/* this class about page about me */
+.info ul li{
+    color: var(--secondary-color);
+    padding: 5px 5px;
+    margin: 20px 0;
+}
+/* the foto abot JS in imegs */
+.img-box{
+    width: 1%;
+    height: 10%;
+    position: absolute;
+    bottom: 0;
+    right: 500px;
+    
+}
+.img-box img{
+    height: 750% ;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-15%) ;
+    transition: bottom 1s, left 1s;
+    display: flex;
+    flex-wrap: wrap;
+ 
+}
+.img-box:hover .back-img{
+    bottom: 40px;
+}
+.img-box:hover .main-img{
+    left: 180%;
+}
+/* all the contect me like github */
+.social{
+    margin-left: 9%;
+    margin-top: 6px;
+
+}
+.social a{
+    font-size: 30px;
+    color: #44bd44b0;
+    margin-right: 20px;
+    padding: 10px;
+    
+}
+.social p{
+    color: var(--secondary-color);
+    line-height: 22px;
+    padding: 5px;
+}
+.social a:hover{
+    color: #606163 ;
+}
+/* end the page home about fild html */
+
+.box2 img{
+    height: 80% ;
+    width: 40%;
+    position: absolute;
+    left: 66%;
+    bottom: 0;
+    transform: translateX(-15%) ;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+/* all thing her about page ACHIEVEMENTS */
+.box3 img{
+   height: 47%;
+   width: 100%; 
+   display: block;
+   position: absolute;
+   top: 20%;
+   
+}
+.info2 h2{
+    color: var(--secondary-color);
+    display: block;
+    position: absolute;
+    top: 70%;
+    left: 6%;
+    
+}
+.info2 ul {
+    color: var(--secondary-color);
+    display: block;
+    position: absolute;
+    top: 75%;
+    left: 8%;
+   
+}
+ .info2 ul li{
+    padding: 5px 5px;
+    margin: 3px 0;
+ }   
+
+.info3 h2{
+    color: var(--secondary-color); 
+    display: block;
+    position: absolute;
+    top: 70%;
+    right: 18%;
+}
+.info3  ul {
+    color: var(--secondary-color);
+    display: block;
+    position: absolute;
+    top: 75%;
+    right: 8%;
+    
+}
+.info3 ul li{
+    padding: 5px 5px;
+    margin: 3px 0;
+}
+
+/* START page Skills */
+
+.info4 h2 {
+    color: var(--secondary-color);
+    display: block;
+    position: absolute;
+    top: 25%;
+    left: 10%;
+
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins' , sans-serif;
+}
+html,body{
+    display: grid;
+    height: 100%;
+    
+}
+.skills-bar{
+    width: 600px;
+    background: var(--secondary-color);
+    border-radius: 33px;
+    padding: 25px 40px;
+    box-shadow: 5px 5px 10px rgba( 0 ,0, 0, 0.2 );
+    margin: 120px 100px ;
+}
+.skills-bar .bar{
+    margin: 20px 0 ;
+}
+.skills-bar .bar:first-child{
+    margin-top: 0px;
+}
+.skills-bar .bar .info5{
+    margin-bottom: 0;
+}
+.skills-bar .bar .info5 span{
+    font-size: 17px;
+    font-weight: 500;
+    color: var(--primary-color) ;
+}
+.skills-bar .bar .progress-line{
+    position: relative;
+    height: 10px;
+    width: 100%;
+    background: #f0f0f0;
+    transform: scaleX(0);
+    transform-origin: left;
+    box-shadow: inset 0px 1px 1px rgba( 0 ,0, 0, 0.05 )
+                      0px 1px rgba( 225 ,225, 225, 0.8 );
+    animation: animate 1s cubic-bezier(1,0,0.5,1) forwards;                 
+}
+.bar .progress-line span {
+    height: 100%;
+    width: 80%;
+    background: #44bd44b0;
+    position: absolute;
+    border-radius: 10px;
+    transform: scaleX(0);
+    transform-origin: left;
+    animation: animate 1s 1s cubic-bezier(1,0,0.5,1) forwards; 
+}
+@keyframes animate{
+    100%{
+        transform: scaleX(1);
+    }
+}
+.progress-line.HTML span{
+    width: 80%;
+ }
+ .progress-line.CSS span{
+     width: 65%;
+  }
+  .progress-line.JS span{
+     width: 50%;
+  }
+  .progress-line.CustomersService span{
+     width: 50%;
+  }
+  .progress-line.DataAnalysis span{
+     width: 70%;
+  }
+  .progress-line.ProblemSolving span{
+     width: 80%;
+  }
+  .progress-line.DesignUXUI span{
+     width: 50%;
+  }
+.bar .progress-line span::after{
+    position: absolute;
+    right: 0;
+    top: -22px;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 500;
+    background: #000;
+    padding: 1px 8px ;
+    border-radius: 3px;
+}
+.progress-line.HTML span::after{
+   content: "80%";
+}
+.progress-line.CSS span::after{
+    content: "65%";
+ }
+ .progress-line.JS span::after{
+    content: "50%";
+ }
+ .progress-line.CustomersService span::after{
+    content: "50%";
+ }
+ .progress-line.DataAnalysis span::after{
+    content: "70%";
+ }
+ .progress-line.ProblemSolving span::after{
+    content: "80%";
+ }
+ .progress-line.DesignUXUI span::after{
+    content: "50%";
+ }
+ .box4{ 
+   display: block;
+   position: absolute;
+   top: 15%; 
+   right: 5%;
+ }
+
+ /* all thing  for bage contact me */
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+.container{
+    width: 50%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 155px 100px ;
+}
+form{
+    background: var(--secondary-color);
+    display: flex;
+    flex-direction: column;
+    padding: 2vw 4vw;
+    width: 90%;
+    max-width: 600px;
+    border-radius: 30px;
+}
+.form h3{
+    color: #fff;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+form input, form textarea{
+    border: 0;
+    margin: 10px 0;
+    padding: 10px;
+    outline: none;
+    background: #c1c3ca ;
+    font-size: 16px ;
+    border-radius: 15px;
+}
+form button{
+    padding: 15px;
+    background: #606163;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 30px;
+    outline: none;
+    cursor: pointer;
+    width: 150px;
+    margin: 9px auto 0 ;
+}
+.box5{
+    display: block;
+    position: absolute;
+    top: 30%; 
+    right: 15%;
+
+}
+.info6 h2{
+    display: block;
+    position: absolute;
+    top: 22%;
+    left: 13%;
+    color: var(--secondary-color)
+}
+/* Mobile */
+@media only screen and (max-width: 900px) {
+    .info{
+        width: 50%;
+        overflow: inherit;
+        position: relative;
+        text-align: center;
+    }
+    .hero nav ul{
+        flex: 1;
+        text-align: center;
+        overflow: inherit;
+        padding: auto;
+        font-size: 10px;
+    }
+    .logo{
+        width: 65px;
+        display: block;
+        position: absolute;
+        top: 7%;
+        left: 5%;
+    }
+    .img-box{
+        width: 50%;
+        overflow: inherit;
+        top: 150%;
+        left: 0px;
+    }
+    .img-box:hover .back-img{
+        bottom: 10px;
+    }
+    .img-box:hover .main-img{
+        left: 100%;
+    }
+    .social{
+        width: 100%;
+        overflow: inherit;
+    }
+    .box2{
+        width: 50%;
+        overflow: inherit;
+        
+    }
+    .box3{
+        width: 50%;
+        overflow: inherit;
+        
+    }
+    .box4{
+        width: 100%;
+        overflow: inherit;
+        position: relative;
+    }
+    .box5{
+        width: 100%;
+        overflow: inherit;
+        position: relative;
+    }
+    .info2 {
+        
+        color: var(--secondary-color);
+        display: block;
+        position: absolute;
+        top: 100%;
+        right: 95%;
+        text-align: left;
+        overflow: inherit;
+        
+        
+    }
+    
+}
+
+

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> ACHIEVEMENTS </title>
+        <link rel="stylesheet" href="design.css">
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <div class="hero">
+            <nav>
+                <img src="images/logo3.png"  class="logo">
+                <ul>
+                    <li><a href="file.html"> | HOME |</a></li>
+                    <li><a href="about.html">| ABOUT ME | </a></li>
+                    <li><a href="ACHIEVEMENTS.html">| ACHIEVEMENTS | </a></li>
+                    <li><a href="SKILLS.html">| SKILLS | </a></li>
+                    <li><a href="Contact.html">| CONTACT WITH ME |</a></li>
+                </ul>
+                <img src="images/moon.png" id="icon">
+            </nav>
+        
+            <div class="box3">
+                <img src="images/tasks.png"  >
+
+            </div>
+            <div class="info2">
+                <h2> My <span>ACHIEVEMENTS</span> In University : </h2>
+                <ul> 
+                    <li> I Joined The programing Club . </li>
+                    <li> I got 200 hours to volunteer in the programming club .</li>
+                    <li> I got 50 hours to organize a competition for the president<br> 
+                        of King Khalid University of Programming . </li>
+                    <li> I am Get 100 hours to organize the Saudi Green Challenge Tech Tree . </li>
+                    
+                    
+                </ul>
+            </div>
+            <div class="info3" >
+                
+               <h2> My <span>ACHIEVEMENTS</span> out University : </h2>
+                <ul>
+                    <li>I was in private work 9 hours a day in my father's company for 7 months .</li>
+                    <li>I got a 22 hour data analysis certificate . </li>
+                    <li> I got a 20-hour course in the basics of cybersecurity . </li>
+                    <li>I attended a Google developer course in the Internet of Things . </li>
+                   
+                </ul>
+                
+            </div>
+            <script>
+                var icon = document.getElementById("icon");
+                icon.onclick = function() {
+                    document.body.classList.toggle("dark-theme");
+                    if(document.body.classList.contains("dark-theme")){
+                        icon.src = "images/sun.png";
+                    }else{
+                        icon.src = "images/moon.png";
+                    }
+                }
+               
+            </script>
+        </div>
+    </body>
+</html>

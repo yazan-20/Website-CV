@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> ABOUT ME </title>
+        <link rel="stylesheet" href="design.css">
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <div class="hero">
+            <nav>
+                <img src="images/logo3.png"  class="logo">
+                <ul>
+                    <li><a href="file.html">| HOME |</a></li>
+                    <li><a href="about.html">| ABOUT ME |</a></li>
+                    <li><a href="ACHIEVEMENTS.html">| ACHIEVEMENTS |</a></li>
+                    <li><a href="SKILLS.html">| SKILLS |</a></li>
+                    <li><a href="Contact.html">| CONTACT WITH ME | </a></li>
+                </ul>
+                <img src="images/moon.png" id="icon">
+             </nav>
+             <div class="info">
+             <h1> I Will Know <span>you</span>  more  about me </h1>
+             <ul>
+                <li>Firstly,<span>I am</span>  glad that you visited my profile and I will tell you more about me. <br>
+                 I am Yazan and I study at King Khalid University, majoring in Information Systems <br>
+                 College of Computer Science . </li>
+
+                <li> <span> I am </span> passionate about learning various skills and love to take on new experiences<br>
+                 and I strive to achieve my goals, starting with building this personal page .</li>
+                 <li>One of the things <span>I love</span> about technology is web development, data analysis <br> 
+                     design UX UI and also aspire to learn new technologies. </li>
+            </ul>
+            </div>
+            <div class="box2">
+               <img src="images/programing.png" > 
+            </div>
+            <script>
+                var icon = document.getElementById("icon");
+                icon.onclick = function() {
+                    document.body.classList.toggle("dark-theme");
+                    if(document.body.classList.contains("dark-theme")){
+                        icon.src = "images/sun.png";
+                    }else{
+                        icon.src = "images/moon.png";
+                    }
+                }
+               
+            </script>
+        </div>
+    </body>
+</html>

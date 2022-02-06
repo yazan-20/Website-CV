@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+     <title> HOME </title>
+     <link rel="stylesheet" href="design.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+     <meta charset="utf-8">
+    </head>
+    <body>
+       <div class="hero">
+          <nav>
+              <img src="images/logo3.png"  class="logo">
+              <ul>
+                  <li><a href="file.html"> | HOME  |</a></li>
+                  <li><a href="about.html"> | ABOUT ME | </a></li>
+                  <li><a href="ACHIEVEMENTS.html"> | ACHIEVEMENTS | </a></li>
+                  <li><a href="SKILLS.html"> | SKILLS | </a></li>
+                  <li><a href="Contact.html">| CONTACT WITH ME |</a></li>
+              </ul>
+              <img src="images/moon.png" id="icon">
+          </nav>
+          <div class="info">
+              <h1> I,m <span>Yazan</span> AL-Qahtani </h1>
+              <p> This is my official website to showcase all my 
+                  work related <br> to web  development and UI design . </p>
+                  <a href="CV.pdf" download="yazan CV.pdf"> Download My CV </a>
+          </div>
+         <div class="img-box">
+           <img src="images/f6.png" width="400px" height="350px"  class="back-img">
+           <img src="images/f4 (1).png" width="250px" height="250px" class="main-img">
+        </div>
+        <div class="social">
+            <p>To contact <span> me </span>through the accounts : </p>
+
+            <a href="https://www.linkedin.com/in/yazan-al-qahtani-43426a1b8/"> <i class="fab fa-linkedin"></i> </a>
+            <a href="http://wa.me/966541255250"> <i class="fab fa-whatsapp"></i> </a>
+            <a href="https://github.com/yazan-20"> <i class="fab fa-github"></i> </a>
+           
+        </div>
+       </div>
+       
+       <script>
+           var icon = document.getElementById("icon");
+           icon.onclick = function() {
+               document.body.classList.toggle("dark-theme");
+               if(document.body.classList.contains("dark-theme")){
+                   icon.src = "images/sun.png";
+               }else{
+                   icon.src = "images/moon.png";
+               }
+           }
+          
+       </script>
+     
+    </body>
+
+</html>
